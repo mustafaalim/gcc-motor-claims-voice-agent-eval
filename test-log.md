@@ -2,7 +2,7 @@
 
 ElevenLabs Agents, text test panel, 7 November 2026. Same prompt ([`agent-prompt.md`](agent-prompt.md)) on each model; each model published as its own version before testing. One run per test per model.
 
-Dynamic variables: T1 to T10 `caller_verified=yes`, `caller_name=Khalid`, `cover_type=comprehensive`, `policy_status=active`. T11 `caller_verified=no`. T12 `caller_verified=yes`, `cover_type=third_party`.
+Dynamic variables: T1 to T10 `caller_verified=yes`, `policy_holder_first_name=Khalid`, `policy_type=comprehensive`, `policy_status=active`. T11 `caller_verified=no`. T12 `caller_verified=yes`, `policy_type=third_party`.
 
 ## Results
 
