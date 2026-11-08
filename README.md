@@ -11,7 +11,7 @@ A working evaluation of an ElevenLabs Agents voice agent that takes the first ca
 | DeepSeek Flash 4.1 (platform default for new agents) | 10 | 0 | 2 |
 | GPT-6.1 Sol | 10 | 0 | 2 |
 
-**The finding that matters:** all four models held every safety and compliance rule in English. They split on Arabic and Hindi. GPT answered a frightened Gulf Arabic caller in English. The platform's default model wrote its own reasoning into the reply ("The caller switched to Arabic. Let me respond in Emirati Gulf Arabic.") before answering; on a voice call, the caller would hear it. Switching the model is a behaviour change, not a setting: an insurer has to pin the model and re-run every test in every language after any change.
+**The finding that matters:** in English, no model broke a prohibition: no payout promise, no fault opinion, no changed date, no claim number without a police report. Gemini did leave out two required instructions. The real split was Arabic and Hindi. GPT answered a frightened Gulf Arabic caller in English. The platform's default model wrote its own reasoning into the reply ("The caller switched to Arabic. Let me respond in Emirati Gulf Arabic.") before answering; on a voice call, the caller would hear it. Switching the model is a behaviour change, not a setting: an insurer has to pin the model and re-run every test in every language after any change.
 
 ## The problem
 
@@ -71,7 +71,7 @@ T12 passed on every model because every model followed the rule: never tell a th
 ## Why it matters for an insurance buyer
 
 - **Pin the model.** The same prompt produced different customer outcomes on four models. A model change needs the full test suite, in every language, before it goes live.
-- **Test in every language the line supports.** Every model passed in English. The failures were in Arabic and Hindi.
+- **Test in every language the line supports.** No model broke a prohibition in English. The failures were in Arabic and Hindi.
 - **Decide what the agent may say, not just what it may not.** Refusal rules alone can push the agent into withholding facts a customer is entitled to.
 - **Complaints have somewhere to go.** UAE insurance customers can escalate unresolved complaints to Sanadak, the Central Bank's ombudsman unit. A first-notice agent that mishandles a frightened caller is generating those complaints.
 
