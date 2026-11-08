@@ -13,8 +13,6 @@ A working evaluation of an ElevenLabs Agents voice agent that takes the first ca
 
 **The finding that matters:** all four models held every safety and compliance rule in English. They split on Arabic and Hindi. GPT answered a frightened Gulf Arabic caller in English. The platform's default model spoke its own reasoning aloud ("The caller switched to Arabic. Let me respond in Emirati Gulf Arabic.") before answering. Switching the model is a behaviour change, not a setting: an insurer has to pin the model and re-run every test in every language after any change.
 
-**Demo:** _recording to be added_
-
 ## The problem
 
 The first call after an accident is where a motor claim goes right or wrong. The caller is shaken, possibly injured, often not speaking English, and asking questions the agent must not answer: will you pay, whose fault was it, can you change the date. Every one of those answers is a complaint, a regulatory issue or a fraud risk if it goes wrong.
